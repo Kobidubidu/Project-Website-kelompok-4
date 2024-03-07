@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia</title>
+    <link rel="stylesheet" href="home.css">   
+</head>
+<body>
+    <div class="topnavbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="username">
+      <?php
+      if (isset($_SESSION['username']));
+      ?>
+  </div>
+  <div class="float-end-user">welcome<?=$_SESSION['username']?>
+  </div>
+  <div class="sidenavbar">
+    <div class="sidenavbar">
+        <ul>
+            <li><a href="https://www.instagram.com/accounts/login/"><span class="mdi--instagram"></a></li>
+            <li><a href="https://github.com/"><span class="fa-brands--github-square"></a></ul>
+            <li><a href="https://twitter.com/login"><span class="teenyicons--twitter-outline"></a></li>
+            <li><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><span class="cib--gmail"></a></li>
+        </ul>
+    </div>
+    <div class="homcont">
+        <h1>Explore</h1>
+        <h2>Indonesia</h2>
+    </div>
+        <button class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <a class="text" href="logout.php">LOGOUT</a>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+</body>
+</html>
